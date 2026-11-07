@@ -1,0 +1,75 @@
+:root {
+  --sable: #fdf8f1;
+  --texte: #1f2937;
+  --accent: #c2410c;
+  --gris: #6b7280;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--texte);
+  background: var(--sable);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: var(--accent); }
+main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+
+.entete {
+  display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center;
+  padding: 12px 16px; background: #fff; border-bottom: 1px solid #eadfce; position: sticky; top: 0; z-index: 1000;
+}
+.entete nav { display: flex; gap: 16px; }
+.entete a { text-decoration: none; color: var(--texte); font-weight: 500; }
+.entete a.active { color: var(--accent); }
+.entete nav { align-items: center; }
+.recherche { flex: 1 1 220px; max-width: 360px; }
+.recherche input {
+  width: 100%; padding: 8px 14px; border: 1px solid #d6c7b2; border-radius: 999px; font: inherit; background: var(--sable);
+}
+.langue {
+  border: 1px solid var(--accent); color: var(--accent); background: #fff; border-radius: 999px;
+  padding: 4px 10px; font-weight: 700; cursor: pointer;
+}
+.resultats { color: var(--gris); }
+.logo { font-weight: 800 !important; font-size: 1.2rem; color: var(--accent) !important; }
+
+.hero {
+  padding: 48px 24px; border-radius: 16px; color: #fff; margin-bottom: 24px;
+  background: linear-gradient(135deg, #c2410c, #0369a1);
+}
+.hero h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3rem); }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+.bouton { background: #fff; color: var(--accent); padding: 10px 18px; border-radius: 999px; text-decoration: none; font-weight: 600; }
+.bouton-clair { background: transparent; color: #fff; border: 2px solid #fff; }
+
+.grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.carte-lieu {
+  display: block; background: #fff; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.08); transition: transform 0.15s;
+}
+.carte-lieu:hover { transform: translateY(-2px); }
+.carte-lieu-corps { padding: 12px 16px; }
+.carte-lieu h3 { margin: 8px 0 4px; }
+.carte-lieu p { margin: 4px 0; color: var(--gris); }
+
+.photo { width: 100%; height: 170px; object-fit: cover; display: block; }
+.photo-grande { height: 320px; border-radius: 12px; margin: 12px 0; }
+.photo-vide { display: flex; align-items: flex-end; padding: 12px; color: #fff; font-weight: 700; opacity: 0.9; }
+
+.badge { display: inline-block; color: #fff; font-size: 0.75rem; padding: 2px 10px; border-radius: 999px; }
+.quartier { color: var(--gris); }
+.infos { padding-left: 18px; }
+
+.filtres { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.filtres button { border: 1px solid #d6c7b2; background: #fff; padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+.filtres button.actif { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.carte { border-radius: 12px; margin: 16px 0; }
+.marqueur {
+  display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%;
+  border: 3px solid #fff; color: #fff; font-weight: 700; font-size: 0.8rem; box-shadow: 0 1px 4px rgb(0 0 0 / 0.4);
+}
+.legende { display: flex; flex-wrap: wrap; gap: 14px; }
+.legende i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; vertical-align: middle; }
+
+.liste-itineraires li, .etapes-liste li { margin-bottom: 8px; }
+.etapes { font-size: 0.85rem; }
+.pied { text-align: center; color: var(--gris); padding: 24px; font-size: 0.85rem; }

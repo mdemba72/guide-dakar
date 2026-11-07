@@ -1,0 +1,2 @@
+Déposez ici les photos des lieux (ex. renaissance.jpg).
+Le nom du fichier doit correspondre au champ `photo` dans src/data/lieux.js.
