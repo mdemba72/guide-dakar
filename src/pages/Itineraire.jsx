@@ -1,4 +1,5 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import { usePlanning } from '../planning.jsx';
 import { itineraireParId } from '../data/itineraires.js';
 import { lieuParId } from '../data/lieux.js';
 import Carte from '../components/Carte.jsx';
@@ -7,6 +8,8 @@ import { useLangue } from '../i18n.jsx';
 export default function Itineraire() {
   const { t, loc } = useLangue();
   const { id } = useParams();
+  const { ajouterPlusieurs } = usePlanning();
+  const navigate = useNavigate();
   const brut = itineraireParId(id);
   if (!brut) return <p>{t('itineraireIntrouvable')} <Link to="/itineraires">{t('retour')}</Link></p>;
 
@@ -18,6 +21,9 @@ export default function Itineraire() {
       <Link to="/itineraires">{t('tousLesItineraires')}</Link>
       <h1>{it.titre}</h1>
       <p>{it.duree} · {it.resume}</p>
+      <button className="bouton-plan" onClick={() => { ajouterPlusieurs(it.etapes); navigate('/planifier'); }}>
+        {t('ajouterItineraire')}
+      </button>
       <Carte lieux={etapes} trace hauteur={380} />
       <ol className="etapes-liste">
         {etapes.map(loc).map((l) => (

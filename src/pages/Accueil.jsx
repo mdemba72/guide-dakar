@@ -15,6 +15,7 @@ export default function Accueil() {
         <div className="hero-actions">
           <Link className="bouton" to="/lieux">{t('voirLieux')}</Link>
           <Link className="bouton bouton-clair" to="/carte">{t('ouvrirCarte')}</Link>
+          <Link className="bouton bouton-clair" to="/planifier">{t('planifier')}</Link>
         </div>
       </section>
 

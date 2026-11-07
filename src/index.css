@@ -131,3 +131,66 @@ h1, h2, h3, .logo { font-family: 'Poppins', system-ui, sans-serif; letter-spacin
 .credits { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
 .credits li { display: flex; gap: 10px; align-items: center; background: #fff; border-radius: 10px; padding: 8px; font-size: 0.85rem; }
 .credits img { width: 64px; height: 48px; object-fit: cover; border-radius: 6px; flex: none; }
+
+/* ---------- Planifier ma visite ---------- */
+.nav-planifier { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); color: #fff !important;
+  padding: 6px 14px !important; border-radius: 999px; box-shadow: 0 4px 12px -4px rgb(194 65 12 / 0.6); }
+.nav-planifier::after { display: none; }
+.nav-planifier.active { background: #0369a1; }
+.nav-compteur { background: #fff; color: var(--accent); border-radius: 999px; min-width: 20px; height: 20px; padding: 0 6px;
+  font-size: 0.75rem; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; }
+
+.bouton-plan { border: 1.5px solid var(--accent); background: #fff; color: var(--accent); border-radius: 999px;
+  padding: 7px 16px; font: inherit; font-weight: 600; cursor: pointer; transition: background 0.15s, color 0.15s; margin: 6px 0 10px; }
+.bouton-plan:hover { background: var(--accent); color: #fff; }
+.bouton-plan-actif { background: #15803d; border-color: #15803d; color: #fff; }
+.bouton-plan-actif:hover { background: #166534; }
+.bouton-plan-compact { padding: 3px 10px; font-size: 0.78rem; margin: 0; }
+.bouton-plan-danger { border-color: #be123c; color: #be123c; }
+.bouton-plan-danger:hover { background: #be123c; color: #fff; }
+.carte-lieu-pied { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 6px; }
+
+.plan-intro { color: var(--gris); max-width: 680px; }
+.plan-vide { background: #fff; border-radius: 16px; padding: 16px 20px; border: 2px dashed #eadfce; }
+.plan-barre { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; background: #fff; border-radius: 14px;
+  padding: 10px 16px; box-shadow: 0 1px 3px rgb(0 0 0 / 0.06); }
+.plan-barre select, .plan-controles select { font: inherit; padding: 4px 8px; border-radius: 8px; border: 1px solid #d6c7b2; background: var(--sable); }
+.plan-compte { color: var(--accent); font-weight: 700; }
+.plan-actions { margin-left: auto; display: flex; gap: 8px; }
+.plan-actions .bouton-plan { margin: 0; }
+.plan-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; margin-top: 16px; }
+.plan-carte { position: sticky; top: 80px; }
+.plan-carte .carte { margin: 0; }
+.plan-jour { background: #fff; border-radius: 16px; padding: 12px 16px; margin-bottom: 14px; box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
+  border-top: 4px solid #0369a1; }
+.plan-jour h2 { margin: 4px 0 8px; font-size: 1.15rem; }
+.plan-jour ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.plan-jour-vide { color: var(--gris); font-size: 0.9rem; margin: 0; }
+.plan-etape { display: flex; align-items: center; gap: 10px; padding: 6px; border-radius: 10px; background: var(--sable); }
+.plan-numero { flex: none; width: 26px; height: 26px; border-radius: 50%; color: #fff; font-weight: 700; font-size: 0.8rem;
+  display: flex; align-items: center; justify-content: center; }
+.plan-vignette { flex: none; width: 56px; height: 42px; border-radius: 8px; overflow: hidden; }
+.plan-vignette .photo { height: 42px; }
+.plan-vignette .photo-vide span { display: none; }
+.plan-texte { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.plan-texte a { text-decoration: none; color: var(--texte); }
+.plan-texte small { color: var(--gris); }
+.plan-controles { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+.plan-controles button { width: 30px; height: 30px; border-radius: 8px; border: 1px solid #d6c7b2; background: #fff; cursor: pointer; }
+.plan-controles button:hover { border-color: var(--accent); color: var(--accent); }
+.plan-ajout { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; }
+.plan-ajout li { display: flex; align-items: center; gap: 8px; background: #fff; border-radius: 10px; padding: 8px 10px; }
+.plan-ajout a { flex: 1; color: var(--texte); text-decoration: none; font-size: 0.92rem; }
+.plan-pastille { flex: none; width: 10px; height: 10px; border-radius: 50%; }
+
+@media (max-width: 760px) {
+  .plan-grille { grid-template-columns: 1fr; }
+  .plan-carte { position: static; order: -1; }
+  .plan-actions { margin-left: 0; }
+}
+@media print {
+  .entete, .pied, .non-imprime, .plan-actions, .plan-controles, .plan-intro, .bouton-plan { display: none !important; }
+  .plan-grille { grid-template-columns: 1fr; }
+  .plan-carte { position: static; }
+  body, :root { background: #fff; }
+}

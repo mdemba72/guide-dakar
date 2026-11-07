@@ -3,6 +3,7 @@ import { lieuParId, categories } from '../data/lieux.js';
 import { itineraires } from '../data/itineraires.js';
 import Photo from '../components/Photo.jsx';
 import Carte from '../components/Carte.jsx';
+import BoutonPlanning from '../components/BoutonPlanning.jsx';
 import { useLangue } from '../i18n.jsx';
 
 export default function Lieu() {
@@ -21,6 +22,7 @@ export default function Lieu() {
       <Photo lieu={brut} grande />
       <span className="badge" style={{ background: cat.couleur }}>{cat.label}</span>
       <h1>{lieu.nom}</h1>
+      <BoutonPlanning id={lieu.id} />
       <p className="quartier">{t('quartier')} : {lieu.quartier}</p>
       <p>{lieu.description}</p>
       <ul className="infos">
