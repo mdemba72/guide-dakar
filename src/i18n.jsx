@@ -34,6 +34,13 @@ const textes = {
     piedCarte: 'Fonds de carte © OpenStreetMap',
     autreLangue: 'EN',
     autreLangueTitre: 'View in English',
+    photo: 'Photo',
+    photoIllustration: "Photo d'illustration",
+    creditsLien: 'Crédits photos',
+    creditsTitre: 'Crédits photos',
+    creditsTexte: 'Les photos proviennent de Wikimedia Commons et sont publiées sous licences libres. Merci à leurs auteurs.',
+    voirSource: 'source',
+    heroChiffres: (n, i) => `${n} lieux · ${i} itinéraires · carte interactive`,
   },
   en: {
     titreSite: 'Dakar Guide',
@@ -67,6 +74,13 @@ const textes = {
     piedCarte: 'Map data © OpenStreetMap',
     autreLangue: 'FR',
     autreLangueTitre: 'Voir en français',
+    photo: 'Photo',
+    photoIllustration: 'Illustrative photo',
+    creditsLien: 'Photo credits',
+    creditsTitre: 'Photo credits',
+    creditsTexte: 'Photos come from Wikimedia Commons and are published under free licences. Thanks to their authors.',
+    voirSource: 'source',
+    heroChiffres: (n, i) => `${n} places · ${i} itineraries · interactive map`,
   },
 };
 

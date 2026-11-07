@@ -73,3 +73,61 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
 .liste-itineraires li, .etapes-liste li { margin-bottom: 8px; }
 .etapes { font-size: 0.85rem; }
 .pied { text-align: center; color: var(--gris); padding: 24px; font-size: 0.85rem; }
+
+/* ---------- Touche stylée (mêmes couleurs, finitions plus soignées) ---------- */
+h1, h2, h3, .logo { font-family: 'Poppins', system-ui, sans-serif; letter-spacing: -0.01em; }
+.entete { background: rgb(255 255 255 / 0.88); backdrop-filter: blur(10px); box-shadow: 0 2px 12px rgb(0 0 0 / 0.05); }
+.logo::before { content: ''; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px;
+  background: linear-gradient(135deg, #c2410c, #0369a1); vertical-align: middle; }
+.entete nav a { position: relative; padding: 4px 0; }
+.entete nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; background: var(--accent);
+  transform: scaleX(0); transition: transform 0.2s; }
+.entete nav a:hover::after, .entete nav a.active::after { transform: scaleX(1); }
+
+.hero {
+  position: relative; overflow: hidden; padding: clamp(56px, 10vw, 110px) clamp(20px, 5vw, 48px); border-radius: 20px;
+  background: linear-gradient(135deg, rgb(194 65 12 / 0.88), rgb(3 105 161 / 0.78)), var(--hero-photo, none) center / cover,
+    linear-gradient(135deg, #c2410c, #0369a1);
+  box-shadow: 0 18px 40px -18px rgb(3 105 161 / 0.6);
+}
+.hero h1 { text-shadow: 0 2px 12px rgb(0 0 0 / 0.25); }
+.hero-texte { font-size: 1.15rem; max-width: 560px; }
+.hero-chiffres { display: inline-block; margin: 4px 0 0; padding: 4px 14px; border-radius: 999px; font-size: 0.85rem;
+  background: rgb(255 255 255 / 0.18); border: 1px solid rgb(255 255 255 / 0.35); }
+.bouton { transition: transform 0.15s, box-shadow 0.15s; box-shadow: 0 4px 14px rgb(0 0 0 / 0.15); }
+.bouton:hover { transform: translateY(-2px); }
+
+.titre-section { margin-top: 36px; }
+.titre-section::after { content: ''; display: block; width: 48px; height: 4px; border-radius: 4px; margin-top: 6px;
+  background: linear-gradient(90deg, #c2410c, #0369a1); }
+
+.carte-lieu { border-radius: 16px; box-shadow: 0 2px 10px rgb(0 0 0 / 0.06); transition: transform 0.2s, box-shadow 0.2s; }
+.carte-lieu:hover { transform: translateY(-4px); box-shadow: 0 14px 30px -12px rgb(0 0 0 / 0.25); }
+.carte-lieu-image { position: relative; overflow: hidden; }
+.carte-lieu-image .photo { height: 190px; transition: transform 0.5s; }
+.carte-lieu:hover .carte-lieu-image .photo { transform: scale(1.06); }
+.badge-flottant { position: absolute; top: 12px; left: 12px; box-shadow: 0 2px 8px rgb(0 0 0 / 0.25); }
+.carte-lieu h3 { margin-top: 4px; }
+.quartier-mini { font-size: 0.8rem; color: var(--accent) !important; font-weight: 600; }
+.quartier-mini::before { content: '● '; font-size: 0.6rem; vertical-align: middle; }
+
+.figure-photo { margin: 12px 0; }
+.figure-photo .photo-grande { margin: 0; height: clamp(240px, 45vw, 440px); box-shadow: 0 16px 36px -18px rgb(0 0 0 / 0.5); }
+.figure-photo figcaption { font-size: 0.75rem; color: var(--gris); margin-top: 6px; }
+.figure-photo figcaption a { color: var(--gris); }
+.infos { background: #fff; border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; padding: 12px 16px 12px 32px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.06); }
+
+.filtres button { transition: background 0.15s, color 0.15s; }
+.filtres button:hover:not(.actif) { border-color: var(--accent); color: var(--accent); }
+.carte { box-shadow: 0 8px 24px -12px rgb(0 0 0 / 0.3); }
+.liste-itineraires { list-style: none; padding: 0; display: grid; gap: 10px; }
+.liste-itineraires li { background: #fff; border-radius: 12px; padding: 12px 16px; border-left: 4px solid #0369a1;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.06); margin: 0; }
+
+.pied { margin-top: 40px; border-top: 1px solid #eadfce; }
+.pied-logo { font-family: 'Poppins', sans-serif; font-weight: 800; color: var(--accent); font-size: 1.05rem; margin: 0 0 4px; }
+
+.credits { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.credits li { display: flex; gap: 10px; align-items: center; background: #fff; border-radius: 10px; padding: 8px; font-size: 0.85rem; }
+.credits img { width: 64px; height: 48px; object-fit: cover; border-radius: 6px; flex: none; }

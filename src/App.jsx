@@ -1,10 +1,11 @@
-import { NavLink, Route, Routes } from 'react-router-dom';
+import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import Accueil from './pages/Accueil.jsx';
 import Lieux from './pages/Lieux.jsx';
 import Lieu from './pages/Lieu.jsx';
 import PageCarte from './pages/PageCarte.jsx';
 import Itineraires from './pages/Itineraires.jsx';
 import Itineraire from './pages/Itineraire.jsx';
+import Credits from './pages/Credits.jsx';
 import Recherche from './components/Recherche.jsx';
 import { useLangue } from './i18n.jsx';
 
@@ -30,10 +31,14 @@ export default function App() {
           <Route path="/carte" element={<PageCarte />} />
           <Route path="/itineraires" element={<Itineraires />} />
           <Route path="/itineraires/:id" element={<Itineraire />} />
+          <Route path="/credits" element={<Credits />} />
           <Route path="*" element={<p>{t('pageIntrouvable')}</p>} />
         </Routes>
       </main>
-      <footer className="pied">{t('piedCarte')}</footer>
+      <footer className="pied">
+        <p className="pied-logo">{t('titreSite')}</p>
+        <p>{t('piedCarte')} · <Link to="/credits">{t('creditsLien')}</Link></p>
+      </footer>
     </>
   );
 }

@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { categories } from '../data/lieux.js';
+import { creditsPhotos } from '../data/photos.js';
 import { useLangue } from '../i18n.jsx';
 
 // Affiche public/photos/<photo>, ou un visuel coloré si le fichier n'existe pas encore.
+// En grand format (fiche lieu), affiche aussi le crédit de la photo, exigé par sa licence.
 export default function Photo({ lieu, grande = false }) {
-  const { loc } = useLangue();
+  const { t, loc } = useLangue();
   const [erreur, setErreur] = useState(false);
   const l = loc(lieu);
   const classe = grande ? 'photo photo-grande' : 'photo';
@@ -17,5 +19,19 @@ export default function Photo({ lieu, grande = false }) {
       </div>
     );
   }
-  return <img className={classe} src={`${import.meta.env.BASE_URL}photos/${l.photo}`} alt={l.nom} onError={() => setErreur(true)} />;
+  const img = (
+    <img className={classe} src={`${import.meta.env.BASE_URL}photos/${l.photo}`} alt={l.nom}
+      loading={grande ? 'eager' : 'lazy'} onError={() => setErreur(true)} />
+  );
+  const credit = creditsPhotos[l.photo];
+  if (!grande || !credit) return img;
+  return (
+    <figure className="figure-photo">
+      {img}
+      <figcaption>
+        {credit.illustration && <>{t('photoIllustration')} · </>}
+        {t('photo')} : {credit.auteur} · <a href={credit.source} target="_blank" rel="noreferrer">{credit.licence}</a>
+      </figcaption>
+    </figure>
+  );
 }

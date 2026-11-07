@@ -8,21 +8,22 @@ export default function Accueil() {
   const { t, loc } = useLangue();
   return (
     <>
-      <section className="hero">
+      <section className="hero" style={{ '--hero-photo': `url(${import.meta.env.BASE_URL}photos/hero-dakar.jpg)` }}>
         <h1>{t('heroTitre')}</h1>
-        <p>{t('heroTexte')}</p>
+        <p className="hero-texte">{t('heroTexte')}</p>
+        <p className="hero-chiffres">{t('heroChiffres', lieux.length, itineraires.length)}</p>
         <div className="hero-actions">
           <Link className="bouton" to="/lieux">{t('voirLieux')}</Link>
           <Link className="bouton bouton-clair" to="/carte">{t('ouvrirCarte')}</Link>
         </div>
       </section>
 
-      <h2>{t('incontournables')}</h2>
+      <h2 className="titre-section">{t('incontournables')}</h2>
       <div className="grille">
-        {lieux.slice(0, 3).map((l) => <CarteLieu key={l.id} lieu={l} />)}
+        {lieux.slice(0, 6).map((l) => <CarteLieu key={l.id} lieu={l} />)}
       </div>
 
-      <h2>{t('itineraires')}</h2>
+      <h2 className="titre-section">{t('itineraires')}</h2>
       <ul className="liste-itineraires">
         {itineraires.map(loc).map((it) => (
           <li key={it.id}>

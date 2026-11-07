@@ -31,6 +31,8 @@ Search (`src/recherche.js`): accent/case-insensitive, all words must match, inde
 
 Deployment: static SPA. `netlify.toml`, `public/_redirects` and `vercel.json` rewrite all paths to `index.html` so deep links work with `BrowserRouter`.
 
-Photos: `photo` is a filename in `public/photos/`. `Photo.jsx` falls back to a colored placeholder when the file is missing, so places can be added before their photos.
+Photos: `photo` is a filename in `public/photos/`. `Photo.jsx` falls back to a colored placeholder when the file is missing, so places can be added before their photos. Current photos come from Wikimedia Commons (free licences); their attribution lives in `src/data/photos.js` (`creditsPhotos`, keyed by filename), shown under the large photo on place pages and on the `/credits` page. Any new photo needs a credit entry there. `illustration: true` marks a mood photo that is not the venue itself (some restaurants/hotels).
+
+Deployment: GitHub Pages at https://mdemba72.github.io/guide-dakar/ — pushing to `main` triggers `.github/workflows/pages.yml` (`npm run build:github`, base `/guide-dakar/`). Router basename and photo URLs use `import.meta.env.BASE_URL`. In Git Bash, prefix commands passing `--base=/...` with `MSYS_NO_PATHCONV=1`.
 
 Place coordinates and practical info (opening days, durations) are approximate and unverified.

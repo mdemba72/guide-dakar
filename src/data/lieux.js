@@ -390,6 +390,198 @@ export const lieux = [
       infos: { duree: 'Stay', conseil: 'A good base for Gorée.' },
     },
   },
+
+  // --- Lieux ajoutés en novembre 2026 ---
+  {
+    id: 'iles-madeleine',
+    nom: 'Parc national des Îles de la Madeleine',
+    categorie: 'nature',
+    quartier: 'Au large de Dakar',
+    coords: [14.6564, -17.4706],
+    photo: 'madeleine.jpg',
+    resume: "Plus petit parc national d'Afrique : îlots volcaniques, oiseaux marins et eaux turquoise.",
+    description:
+      "Accessible en pirogue avec un guide agréé, l'île de Sarpan abrite des colonies d'oiseaux marins, des baobabs nains et des criques propices à la baignade.",
+    infos: { duree: 'Demi-journée', conseil: 'Sorties seulement par mer calme ; réserver auprès du parc.' },
+    en: {
+      nom: 'Madeleine Islands National Park',
+      resume: "Africa's smallest national park: volcanic islets, seabirds and turquoise water.",
+      description:
+        'Reached by pirogue with an approved guide, Sarpan island is home to seabird colonies, dwarf baobabs and coves for swimming.',
+      infos: { duree: 'Half a day', conseil: 'Trips only run in calm seas; book with the park.' },
+    },
+  },
+  {
+    id: 'musee-theodore-monod',
+    nom: "Musée Théodore Monod d'art africain",
+    categorie: 'culture',
+    quartier: 'Plateau',
+    coords: [14.6634, -17.4316],
+    photo: 'theodore-monod.jpg',
+    resume: "L'un des plus anciens musées d'Afrique de l'Ouest, riche en masques et objets rituels.",
+    description:
+      "Installé dans un bâtiment colonial de la place Soweto, le musée de l'IFAN présente masques, statuaire, textiles et instruments de toute l'Afrique de l'Ouest.",
+    infos: { duree: '1 h 30', conseil: "À combiner avec la place de l'Indépendance toute proche." },
+    en: {
+      nom: 'Théodore Monod Museum of African Art',
+      resume: 'One of the oldest museums in West Africa, rich in masks and ritual objects.',
+      description:
+        'Housed in a colonial building on Place Soweto, the IFAN museum displays masks, statues, textiles and instruments from across West Africa.',
+      infos: { duree: '1 h 30', conseil: 'Combine with the nearby Independence Square.' },
+    },
+  },
+  {
+    id: 'cathedrale-souvenir-africain',
+    nom: 'Cathédrale du Souvenir africain',
+    categorie: 'monument',
+    quartier: 'Plateau',
+    coords: [14.6702, -17.43],
+    photo: 'cathedrale.jpg',
+    resume: 'Cathédrale des années 1930 aux coupoles et vitraux remarquables.',
+    description:
+      'Construite à la mémoire des pionniers morts en Afrique, elle mêle influences soudano-sahéliennes et byzantines. Fresques et vitraux colorés à l’intérieur.',
+    infos: { duree: '30 min', conseil: 'Visite libre en dehors des offices, tenue correcte.' },
+    en: {
+      nom: 'Cathedral of African Remembrance',
+      resume: 'A 1930s cathedral with striking domes and stained glass.',
+      description:
+        'Built in memory of pioneers who died in Africa, it blends Sudano-Sahelian and Byzantine influences. Frescoes and colourful stained glass inside.',
+      infos: { duree: '30 min', conseil: 'Free entry outside services, dress respectfully.' },
+    },
+  },
+  {
+    id: 'grande-mosquee',
+    nom: 'Grande Mosquée de Dakar',
+    categorie: 'monument',
+    quartier: 'Médina',
+    coords: [14.6825, -17.4486],
+    photo: 'grande-mosquee.jpg',
+    resume: 'Mosquée de 1964 au minaret de 67 m, emblème du quartier de la Médina.',
+    description:
+      "Inspirée de l'architecture marocaine, elle se distingue par son minaret élancé et ses décors de zellige. Le quartier alentour est animé et populaire.",
+    infos: { duree: '30 min', conseil: "Visite de l'extérieur ; intérieur sur autorisation, hors heures de prière." },
+    en: {
+      nom: 'Great Mosque of Dakar',
+      resume: 'A 1964 mosque with a 67 m minaret, landmark of the Medina district.',
+      description:
+        'Inspired by Moroccan architecture, it stands out for its slender minaret and zellige tilework. The surrounding district is lively and popular.',
+      infos: { duree: '30 min', conseil: 'View from outside; inside with permission, outside prayer times.' },
+    },
+  },
+  {
+    id: 'marche-kermel',
+    nom: 'Marché Kermel',
+    categorie: 'marche',
+    quartier: 'Plateau',
+    coords: [14.668, -17.429],
+    photo: 'kermel.jpg',
+    resume: 'Halle circulaire de 1910 : poissons, fruits, fleurs et paniers tressés.',
+    description:
+      "Reconstruit à l'identique après un incendie, ce pavillon en fer forgé est plus calme que Sandaga. Artisans et vanniers autour de la halle.",
+    infos: { duree: '1 h', conseil: 'Venir le matin pour les étals de poisson et de fruits.' },
+    en: {
+      nom: 'Kermel Market',
+      resume: 'A round 1910 market hall: fish, fruit, flowers and woven baskets.',
+      description:
+        'Rebuilt identically after a fire, this wrought-iron pavilion is calmer than Sandaga. Craftspeople and basket weavers around the hall.',
+      infos: { duree: '1 h', conseil: 'Come in the morning for the fish and fruit stalls.' },
+    },
+  },
+  {
+    id: 'village-des-arts',
+    nom: 'Village des Arts',
+    categorie: 'culture',
+    quartier: 'Yoff',
+    coords: [14.7387, -17.47],
+    photo: 'village-arts.jpg',
+    resume: "Cité d'ateliers où peintres et sculpteurs reçoivent les visiteurs.",
+    description:
+      "Une cinquantaine d'artistes y travaillent et exposent. On flâne d'atelier en atelier, on discute avec les créateurs et on peut acheter des œuvres directement.",
+    infos: { duree: '1 h 30', conseil: 'Ateliers ouverts en journée, de préférence en semaine.' },
+    en: {
+      nom: 'Village des Arts',
+      resume: "An artists' village where painters and sculptors welcome visitors.",
+      description:
+        'About fifty artists work and exhibit here. Wander from studio to studio, chat with the makers and buy works directly.',
+      infos: { duree: '1 h 30', conseil: 'Studios open during the day, best on weekdays.' },
+    },
+  },
+  {
+    id: 'parc-de-hann',
+    nom: 'Parc forestier et zoologique de Hann',
+    categorie: 'nature',
+    quartier: 'Hann',
+    coords: [14.73, -17.429],
+    photo: 'hann.jpg',
+    resume: 'Grand poumon vert de Dakar : forêt, lac, parcours sportifs et petit zoo.',
+    description:
+      "Plus de 60 hectares d'arbres en pleine ville, appréciés des familles et des joggeurs. Le jardin zoologique présente des espèces de la faune sénégalaise.",
+    infos: { duree: '2 h', conseil: 'Venir tôt le matin, quand il fait encore frais.' },
+    en: {
+      nom: 'Hann Forest and Zoological Park',
+      resume: "Dakar's green lung: forest, lake, fitness trails and a small zoo.",
+      description:
+        'Over 60 hectares of trees in the middle of the city, popular with families and joggers. The zoo shows species of Senegalese wildlife.',
+      infos: { duree: '2 h', conseil: 'Come early in the morning while it is still cool.' },
+    },
+  },
+  {
+    id: 'reserve-bandia',
+    nom: 'Réserve de Bandia',
+    categorie: 'nature',
+    quartier: 'Sindia (65 km)',
+    coords: [14.58, -17.01],
+    photo: 'bandia.jpg',
+    resume: 'Safari en 4x4 : girafes, rhinocéros, zèbres et baobabs géants.',
+    description:
+      "Réserve privée de 3 500 hectares sur la route de Saly. Les visites guidées en véhicule permettent d'approcher les animaux dans la savane.",
+    infos: { duree: 'Demi-journée', conseil: 'Environ 1 h 15 de route ; partir tôt pour voir plus d’animaux.' },
+    en: {
+      nom: 'Bandia Reserve',
+      resume: '4x4 safari: giraffes, rhinos, zebras and giant baobabs.',
+      description:
+        'A 3,500-hectare private reserve on the road to Saly. Guided vehicle tours get you close to the animals in the savannah.',
+      infos: { duree: 'Half a day', conseil: 'About 1 h 15 by road; leave early to see more animals.' },
+    },
+  },
+  {
+    id: 'lagune-somone',
+    nom: 'Lagune de la Somone',
+    categorie: 'nature',
+    quartier: 'Somone (80 km)',
+    coords: [14.487, -17.083],
+    photo: 'somone.jpg',
+    resume: 'Lagune protégée bordée de mangroves, à explorer en pirogue.',
+    description:
+      'Réserve naturelle fréquentée par les pélicans, hérons et flamants. Balade en pirogue dans la mangrove puis baignade sur la longue plage voisine.',
+    infos: { duree: '1 jour', conseil: 'À combiner avec la réserve de Bandia, sur la même route.' },
+    en: {
+      nom: 'Somone Lagoon',
+      resume: 'A protected lagoon fringed with mangroves, to explore by pirogue.',
+      description:
+        'A nature reserve visited by pelicans, herons and flamingos. Pirogue trip through the mangroves, then a swim on the long beach nearby.',
+      infos: { duree: '1 day', conseil: 'Combine with Bandia Reserve on the same road.' },
+    },
+  },
+  {
+    id: 'gare-de-dakar',
+    nom: 'Gare de Dakar',
+    categorie: 'monument',
+    quartier: 'Plateau',
+    coords: [14.6745, -17.429],
+    photo: 'gare.jpg',
+    resume: 'Gare coloniale de 1914 restaurée, terminus du Train express régional.',
+    description:
+      "Façade colorée et grande verrière rénovées. Le TER relie le centre à Diamniadio et à l'aéroport AIBD, pratique pour sortir de la ville.",
+    infos: { duree: '20 min', conseil: 'Prendre le TER pour éviter les embouteillages.' },
+    en: {
+      nom: 'Dakar Railway Station',
+      resume: 'A restored 1914 colonial station, terminus of the Regional Express Train.',
+      description:
+        'Colourful façade and large glass roof renovated. The TER links downtown to Diamniadio and AIBD airport, handy for leaving the city.',
+      infos: { duree: '20 min', conseil: 'Take the TER to avoid traffic jams.' },
+    },
+  },
 ];
 
 export const lieuParId = (id) => lieux.find((l) => l.id === id);
