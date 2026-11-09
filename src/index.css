@@ -207,3 +207,20 @@ h1, h2, h3, .logo { font-family: 'Poppins', system-ui, sans-serif; letter-spacin
 .region strong { font-size: 1.15rem; }
 .region span { font-size: 0.85rem; opacity: 0.9; }
 .filtres-regions button { font-weight: 600; }
+
+/* ---------- Étapes d'itinéraire avec photo ---------- */
+.etapes-photos { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 16px; }
+.etapes-photos li { display: grid; grid-template-columns: 180px 1fr; gap: 16px; align-items: start;
+  background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px -8px rgb(0 0 0 / 0.25); }
+.etapes-photos li > div { padding: 12px 16px 12px 0; }
+.etapes-photos p { margin: 6px 0 0; }
+.etape-photo { position: relative; display: block; }
+.etape-photo .photo { height: 130px; }
+.etape-numero { position: absolute; top: 8px; left: 8px; width: 28px; height: 28px; border-radius: 50%;
+  background: #c2410c; color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 0.9rem; }
+.etape-infos { color: var(--gris); font-size: 0.85rem; }
+@media (max-width: 560px) {
+  .etapes-photos li { grid-template-columns: 1fr; }
+  .etapes-photos li > div { padding: 0 16px 14px; }
+  .etape-photo .photo { height: 170px; }
+}

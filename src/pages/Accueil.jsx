@@ -1,8 +1,16 @@
 import { Link } from 'react-router-dom';
-import { lieux, regions } from '../data/lieux.js';
+import { lieux, regions, lieuParId } from '../data/lieux.js';
 import { itineraires } from '../data/itineraires.js';
 import CarteLieu from '../components/CarteLieu.jsx';
 import { useLangue } from '../i18n.jsx';
+
+// Sélection de la page d'accueil : deux lieux phares par région.
+const incontournables = [
+  'ile-de-goree', 'lac-rose',
+  'joal-fadiouth', 'plage-mbodiene',
+  'parc-national-delta-saloum', 'ile-mar-lodj',
+  'cap-skirring', 'ile-de-carabane',
+];
 
 export default function Accueil() {
   const { t, loc } = useLangue();
@@ -36,7 +44,7 @@ export default function Accueil() {
 
       <h2 className="titre-section">{t('incontournables')}</h2>
       <div className="grille">
-        {lieux.slice(0, 6).map((l) => <CarteLieu key={l.id} lieu={l} />)}
+        {incontournables.map(lieuParId).filter(Boolean).map((l) => <CarteLieu key={l.id} lieu={l} />)}
       </div>
 
       <h2 className="titre-section">{t('itineraires')}</h2>

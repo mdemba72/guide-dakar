@@ -720,6 +720,105 @@ export const lieux = [
     },
   },
 
+  {
+    id: 'basilique-popenguine',
+    nom: 'Basilique Notre-Dame de la Délivrance de Popenguine',
+    categorie: 'monument',
+    region: 'petite-cote',
+    quartier: 'Popenguine (60 km)',
+    coords: [14.5547, -17.1115],
+    photo: 'basilique-popenguine.jpg',
+    resume: 'Sanctuaire marial et grand lieu de pèlerinage du Sénégal.',
+    description:
+      'Fondée à la fin du XIXe siècle par les missionnaires, la basilique attire chaque lundi de Pentecôte des dizaines de milliers de pèlerins venus à pied de Dakar. Le reste de l’année, le village est calme, entre falaises et réserve naturelle.',
+    infos: { duree: '1 h', conseil: 'Tenue correcte exigée ; éviter le week-end de Pentecôte si l’on cherche le calme.' },
+    en: {
+      nom: 'Basilica of Our Lady of Deliverance, Popenguine',
+      resume: 'A Marian shrine and Senegal’s great pilgrimage site.',
+      description:
+        'Founded by missionaries in the late 19th century, the basilica draws tens of thousands of pilgrims every Whit Monday, many walking from Dakar. The rest of the year the village is quiet, between cliffs and the nature reserve.',
+      infos: { duree: '1 hour', conseil: 'Dress modestly; avoid the Pentecost weekend if you want peace and quiet.' },
+    },
+  },
+  {
+    id: 'nianing',
+    nom: 'Nianing',
+    categorie: 'plage',
+    region: 'petite-cote',
+    quartier: 'Nianing (95 km)',
+    coords: [14.344, -16.9294],
+    photo: 'nianing.jpg',
+    resume: 'Longue plage de pêcheurs, plus paisible que Saly.',
+    description:
+      'Au sud de Mbour, Nianing aligne pirogues colorées, petits hôtels et campements les pieds dans le sable. On y voit les retours de pêche et l’église de style soudanais du village.',
+    infos: { duree: 'Demi-journée', conseil: 'Bonne base pour rayonner vers Joal-Fadiouth et le Saloum.' },
+    en: {
+      resume: 'A long fishing beach, quieter than Saly.',
+      description:
+        'South of Mbour, Nianing lines up colourful pirogues, small hotels and beach camps. Watch the fishing boats come in and see the village’s Sudanese-style church.',
+      infos: { duree: 'Half a day', conseil: 'A good base for trips to Joal-Fadiouth and the Saloum.' },
+    },
+  },
+  {
+    id: 'plage-mbodiene',
+    nom: 'Plage et lagune de Mbodiène',
+    categorie: 'plage',
+    region: 'petite-cote',
+    quartier: 'Mbodiène (105 km)',
+    coords: [14.2423, -16.8655],
+    photo: 'mbodiene.jpg',
+    resume: 'Plage de sable blanc bordée de filaos, à côté d’une lagune.',
+    description:
+      'Une des plus belles plages de la Petite-Côte : eau turquoise par beau temps, peu de monde et une lagune où l’on observe des oiseaux. Quelques hôtels et villas, pas de grand centre touristique.',
+    infos: { duree: 'Demi-journée', conseil: 'Apporter eau et pique-nique, les services sont rares hors des hôtels.' },
+    en: {
+      nom: 'Mbodiène beach and lagoon',
+      resume: 'A white-sand beach lined with casuarinas, next to a lagoon.',
+      description:
+        'One of the finest beaches on the Petite-Côte: turquoise water on sunny days, few people, and a lagoon for birdwatching. A few hotels and villas, no big resort.',
+      infos: { duree: 'Half a day', conseil: 'Bring water and a picnic; services are scarce outside the hotels.' },
+    },
+  },
+  {
+    id: 'cimetiere-fadiouth',
+    nom: 'Cimetière mixte de Fadiouth',
+    categorie: 'culture',
+    region: 'petite-cote',
+    quartier: 'Fadiouth (115 km)',
+    coords: [14.1562, -16.8261],
+    photo: 'cimetiere-fadiouth.jpg',
+    resume: 'Cimetière sur une île de coquillages, partagé par chrétiens et musulmans.',
+    description:
+      'Relié à l’île de Fadiouth par une passerelle, ce cimetière bâti sur les coquillages accueille côte à côte tombes chrétiennes et musulmanes, symbole de la coexistence religieuse au Sénégal. Vue sur la mangrove et les greniers sur pilotis.',
+    infos: { duree: '45 min', conseil: 'À visiter avec Joal-Fadiouth ; rester respectueux, c’est un cimetière en activité.' },
+    en: {
+      nom: 'Fadiouth mixed cemetery',
+      resume: 'A cemetery on a shell island, shared by Christians and Muslims.',
+      description:
+        'Reached from Fadiouth island by a footbridge, this cemetery built on shells holds Christian and Muslim graves side by side, a symbol of religious coexistence in Senegal. Views over the mangrove and the granaries on stilts.',
+      infos: { duree: '45 min', conseil: 'Visit with Joal-Fadiouth; be respectful, it is still in use.' },
+    },
+  },
+  {
+    id: 'baobab-fadial',
+    nom: 'Baobab sacré de Fadial',
+    categorie: 'nature',
+    region: 'petite-cote',
+    quartier: 'Fadial, près de Joal (120 km)',
+    coords: [14.1625, -16.7684],
+    photo: 'baobab-fadial.jpg',
+    resume: 'Baobab géant et sacré, l’un des plus grands du Sénégal.',
+    description:
+      'Ce baobab plusieurs fois centenaire, au tronc creux de plus de 30 m de circonférence, servait autrefois de sépulture aux griots sérères. On peut entrer dans sa cavité.',
+    infos: { duree: '30 min', conseil: 'À 5 km de Joal ; une petite contribution est demandée à l’entrée.' },
+    en: {
+      nom: 'Sacred baobab of Fadial',
+      resume: 'A giant sacred baobab, one of the largest in Senegal.',
+      description:
+        'This centuries-old baobab, with a hollow trunk over 30 m round, was once a burial place for Serer griots. You can step inside its cavity.',
+      infos: { duree: '30 min', conseil: '5 km from Joal; a small contribution is asked at the entrance.' },
+    },
+  },
   // --- Delta du Saloum ---
   {
     id: 'palmarin',
@@ -840,6 +939,104 @@ export const lieux = [
     },
   },
 
+  {
+    id: 'pointe-sangomar',
+    nom: 'Pointe de Sangomar',
+    categorie: 'nature',
+    region: 'saloum',
+    quartier: 'Djifer (en pirogue)',
+    coords: [13.8250, -16.7552],
+    photo: 'sangomar.jpg',
+    resume: 'Flèche de sable sauvage entre océan et delta, aux baobabs couverts d’oiseaux.',
+    description:
+      'Au bout de la langue de sable de Djifer, la pointe de Sangomar est un lieu sacré pour les Sérères et un refuge pour les cormorans, sternes et pélicans. Plages désertes et baobabs isolés.',
+    infos: { duree: 'Demi-journée', conseil: 'Accès uniquement en pirogue depuis Djifer ou Palmarin, avec un guide.' },
+    en: {
+      nom: 'Sangomar Point',
+      resume: 'A wild sand spit between ocean and delta, with baobabs full of birds.',
+      description:
+        'At the end of the Djifer sand spit, Sangomar Point is sacred to the Serer and a refuge for cormorants, terns and pelicans. Empty beaches and lone baobabs.',
+      infos: { duree: 'Half a day', conseil: 'Only reachable by pirogue from Djifer or Palmarin, with a guide.' },
+    },
+  },
+  {
+    id: 'parc-national-delta-saloum',
+    nom: 'Parc national du delta du Saloum',
+    categorie: 'nature',
+    region: 'saloum',
+    quartier: 'Delta du Saloum',
+    coords: [13.83, -16.68],
+    photo: 'parc-saloum.jpg',
+    resume: 'Mangroves, bolongs et îles aux oiseaux classés à l’UNESCO.',
+    description:
+      'Le parc protège un labyrinthe de chenaux (bolongs), de mangroves et d’îlots où nichent cormorans, flamants, pélicans et sternes. Le delta est inscrit au patrimoine mondial de l’UNESCO pour ses amas coquilliers et sa culture sérère.',
+    infos: { duree: '1 jour', conseil: 'Sortie en pirogue depuis Ndangane, Mar Lodj ou Toubacouta ; meilleure période pour les oiseaux : novembre à avril.' },
+    en: {
+      nom: 'Saloum Delta National Park',
+      resume: 'UNESCO-listed mangroves, creeks and bird islands.',
+      description:
+        'The park protects a maze of channels (bolongs), mangroves and islets where cormorants, flamingos, pelicans and terns nest. The delta is a UNESCO World Heritage Site for its shell mounds and Serer culture.',
+      infos: { duree: '1 day', conseil: 'Pirogue trips from Ndangane, Mar Lodj or Toubacouta; best for birds from November to April.' },
+    },
+  },
+  {
+    id: 'ndangane',
+    nom: 'Ndangane',
+    categorie: 'culture',
+    region: 'saloum',
+    quartier: 'Ndangane (160 km)',
+    coords: [14.078, -16.6909],
+    photo: 'ndangane.jpg',
+    resume: 'Village-embarcadère du nord du delta, porte vers Mar Lodj.',
+    description:
+      'Point de départ des pirogues vers l’île de Mar Lodj et les bolongs. Campements et petits hôtels au bord du fleuve, couchers de soleil sur les pirogues colorées.',
+    infos: { duree: 'Demi-journée', conseil: 'Environ 3 h de route depuis Dakar ; réserver la pirogue la veille.' },
+    en: {
+      resume: 'A landing village in the north of the delta, gateway to Mar Lodj.',
+      description:
+        'The starting point for pirogues to Mar Lodj island and the creeks. Camps and small hotels on the riverbank, sunsets over colourful pirogues.',
+      infos: { duree: 'Half a day', conseil: 'About 3 hours by road from Dakar; book the pirogue the day before.' },
+    },
+  },
+  {
+    id: 'diorom-boumak',
+    nom: 'Île aux coquillages de Diorom Boumak',
+    categorie: 'culture',
+    region: 'saloum',
+    quartier: 'Aire marine protégée de Bamboung',
+    coords: [13.79, -16.57],
+    photo: 'diorom-boumak.jpg',
+    resume: 'Île formée d’amas de coquillages millénaires, avec baobabs et tumulus.',
+    description:
+      'Au cœur de l’aire marine protégée de Bamboung, cette île est faite de coquillages accumulés depuis des siècles. On y trouve des tumulus funéraires et de grands baobabs : un des sites qui valent au delta son classement UNESCO.',
+    infos: { duree: 'Demi-journée', conseil: 'Excursion en pirogue depuis Toubacouta ou Missirah ; emporter de l’eau.' },
+    en: {
+      nom: 'Diorom Boumak shell island',
+      resume: 'An island made of ancient shell mounds, with baobabs and burial mounds.',
+      description:
+        'In the heart of the Bamboung marine protected area, this island is built from shells piled up over centuries. It holds burial mounds and large baobabs: one of the sites behind the delta’s UNESCO listing.',
+      infos: { duree: 'Half a day', conseil: 'Pirogue trip from Toubacouta or Missirah; bring water.' },
+    },
+  },
+  {
+    id: 'missirah',
+    nom: 'Missirah',
+    categorie: 'culture',
+    region: 'saloum',
+    quartier: 'Missirah, près de Toubacouta',
+    coords: [13.6824, -16.5019],
+    photo: 'missirah.jpg',
+    resume: 'Village de pêcheurs au bord des bolongs, avec un fromager géant.',
+    description:
+      'Grand quai de pêche animé au retour des pirogues, fumage du poisson et forêt de Fathala toute proche. Le village est connu pour son fromager géant aux racines immenses.',
+    infos: { duree: '2 h', conseil: 'Venir en fin d’après-midi pour le débarquement du poisson.' },
+    en: {
+      resume: 'A fishing village on the creeks, with a giant kapok tree.',
+      description:
+        'A big fishing quay that comes alive when the pirogues return, fish smoking and the Fathala forest close by. The village is known for its giant kapok tree with huge roots.',
+      infos: { duree: '2 hours', conseil: 'Come in the late afternoon to see the catch landed.' },
+    },
+  },
   // --- Casamance ---
   {
     id: 'ziguinchor',

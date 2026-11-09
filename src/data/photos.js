@@ -307,5 +307,65 @@ export const creditsPhotos = {
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Plage_d%27Ab%C3%A9n%C3%A9.jpg"
+  },
+  "basilique-popenguine.jpg": {
+    "auteur": "Ji-Elle",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:PopenguineChurch.JPG"
+  },
+  "nianing.jpg": {
+    "auteur": "Mel-odile",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Petite_c%C3%B4te,_Nianing.jpg"
+  },
+  "mbodiene.jpg": {
+    "auteur": "Amiral serge",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Plage_de_Mbodjene.jpg"
+  },
+  "cimetiere-fadiouth.jpg": {
+    "auteur": "AdjoEsse",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_Cimeti%C3%A8re_mixte_de_Joal-Fadiouth_02.jpg"
+  },
+  "baobab-fadial.jpg": {
+    "auteur": "Abrahami",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Baobab_sacr%C3%A9_de_Fadial.jpg"
+  },
+  "sangomar.jpg": {
+    "auteur": "William Dossett",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cormorant_Baobab_on_Sangomar.jpg"
+  },
+  "parc-saloum.jpg": {
+    "auteur": "By cheikh pic",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cormorans_%C3%A0_poitrine_blanche_sur_le_delta_du_sine_saloum.jpg"
+  },
+  "ndangane.jpg": {
+    "auteur": "Olivier Flambeau",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Port_de_Ndangane.jpg"
+  },
+  "diorom-boumak.jpg": {
+    "auteur": "6artphotographie",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%8Ele_aux_coquillages,_Diorom_Boumak,_aire_marine_prot%C3%A9g%C3%A9e_de_Bamboung_02.jpg"
+  },
+  "missirah.jpg": {
+    "auteur": "Evrard Adekplovi",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Quai_de_p%C3%AAche_de_Missirah_S%C3%A9n%C3%A9gal.jpg"
   }
 };

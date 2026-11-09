@@ -35,4 +35,4 @@ Photos: `photo` is a filename in `public/photos/`. `Photo.jsx` falls back to a c
 
 Deployment: GitHub Pages at https://mdemba72.github.io/guide-dakar/ — pushing to `main` triggers `.github/workflows/pages.yml` (`npm run build:github`, base `/guide-dakar/`). Router basename and photo URLs use `import.meta.env.BASE_URL`. In Git Bash, prefix commands passing `--base=/...` with `MSYS_NO_PATHCONV=1`.
 
-Coordinates were checked against OpenStreetMap (Nominatim) in November 2026; a few remain approximate (Ngor island, Yoff beach, Mbour fishing beach, Carabane). Opening hours (`horaires`) come from tourist guides, not official sources, and are only set where found; durations and tips are unverified.
+Coordinates were checked against OpenStreetMap (Nominatim) in November 2026; a few remain approximate (Ngor island, Yoff beach, Mbour fishing beach, Carabane, Saloum Delta National Park, Diorom Boumak). Opening hours (`horaires`) come from tourist guides, not official sources, and are only set where found; durations and tips are unverified.
