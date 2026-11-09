@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { lieux } from '../data/lieux.js';
+import { lieux, regions } from '../data/lieux.js';
 import { itineraires } from '../data/itineraires.js';
 import CarteLieu from '../components/CarteLieu.jsx';
 import { useLangue } from '../i18n.jsx';
@@ -18,6 +18,21 @@ export default function Accueil() {
           <Link className="bouton bouton-clair" to="/planifier">{t('planifier')}</Link>
         </div>
       </section>
+
+      <h2 className="titre-section">{t('regions')}</h2>
+      <div className="regions">
+        {Object.entries(regions).map(([cle, brut]) => {
+          const r = loc(brut);
+          const n = lieux.filter((l) => l.region === cle).length;
+          return (
+            <Link key={cle} to={`/lieux?region=${cle}`} className="region"
+              style={{ '--region-photo': `url(${import.meta.env.BASE_URL}photos/${r.photo})` }}>
+              <strong>{r.label}</strong>
+              <span>{t('nbLieux', n)}</span>
+            </Link>
+          );
+        })}
+      </div>
 
       <h2 className="titre-section">{t('incontournables')}</h2>
       <div className="grille">

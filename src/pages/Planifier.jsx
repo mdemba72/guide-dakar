@@ -39,7 +39,7 @@ export default function Planifier() {
             <label>
               {t('nbJours')}{' '}
               <select value={p.jours} onChange={(e) => p.changerJours(Number(e.target.value))}>
-                {[1, 2, 3, 4, 5, 6, 7].map((n) => <option key={n} value={n}>{n}</option>)}
+                {Array.from({ length: 14 }, (_, k) => k + 1).map((n) => <option key={n} value={n}>{n}</option>)}
               </select>
             </label>
             <span className="plan-compte">{t('lieuxPrevus', p.etapes.length)}</span>

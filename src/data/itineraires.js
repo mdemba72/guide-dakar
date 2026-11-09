@@ -50,6 +50,42 @@ export const itineraires = [
       resume: 'Surfing at Virage, Yoff fishermen and a swim at Ngor.',
     },
   },
+  {
+    id: 'petite-cote',
+    titre: 'La Petite-Côte en 2 jours',
+    duree: '2 jours',
+    resume: 'Villages et falaises, safari à Bandia, lagune de la Somone, pêcheurs de Mbour et île aux coquillages.',
+    etapes: ['toubab-dialaw', 'reserve-popenguine', 'reserve-bandia', 'lagune-somone', 'saly', 'marche-poisson-mbour', 'joal-fadiouth'],
+    en: {
+      titre: 'The Petite-Côte in 2 days',
+      duree: '2 days',
+      resume: 'Villages and cliffs, a safari at Bandia, Somone lagoon, Mbour fishermen and the shell island.',
+    },
+  },
+  {
+    id: 'delta-du-saloum',
+    titre: 'Le delta du Saloum',
+    duree: '3 jours',
+    resume: 'Mangroves et bolongs en pirogue, îles sans voitures, safari à Fathala.',
+    etapes: ['palmarin', 'dionewar', 'ile-mar-lodj', 'foundiougne', 'toubacouta', 'reserve-fathala'],
+    en: {
+      titre: 'The Saloum Delta',
+      duree: '3 days',
+      resume: 'Mangroves and creeks by pirogue, car-free islands, a safari at Fathala.',
+    },
+  },
+  {
+    id: 'casamance',
+    titre: 'La Casamance, du fleuve aux plages',
+    duree: '5 jours',
+    resume: 'Ziguinchor, royaume d’Oussouye, cases à étages, île de Carabane et plages de Cap Skirring à Abéné.',
+    etapes: ['ziguinchor', 'oussouye', 'cases-etages-mlomp', 'ile-de-carabane', 'cap-skirring', 'kafountine', 'abene'],
+    en: {
+      titre: 'Casamance, from the river to the beaches',
+      duree: '5 days',
+      resume: 'Ziguinchor, the Kingdom of Oussouye, two-storey houses, Carabane Island and beaches from Cap Skirring to Abéné.',
+    },
+  },
 ];
 
 export const itineraireParId = (id) => itineraires.find((i) => i.id === id);

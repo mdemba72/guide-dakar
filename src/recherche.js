@@ -1,6 +1,8 @@
 // Recherche plein texte insensible aux accents et à la casse.
 // Cherche dans les deux langues pour qu'un visiteur trouve "Gorée Island" ou "Île de Gorée" quelle que soit la langue affichée.
 
+import { regions } from './data/lieux.js';
+
 const normaliser = (s) =>
   (s ?? '')
     .toString()
@@ -10,8 +12,9 @@ const normaliser = (s) =>
 
 function texteIndexe(lieu, categories) {
   const cat = categories[lieu.categorie];
+  const reg = regions[lieu.region];
   const champs = [
-    lieu.nom, lieu.resume, lieu.description, lieu.quartier, cat?.label, cat?.en?.label,
+    lieu.nom, lieu.resume, lieu.description, lieu.quartier, cat?.label, cat?.en?.label, reg?.label, reg?.en?.label,
     lieu.en?.nom, lieu.en?.resume, lieu.en?.description,
   ];
   return normaliser(champs.join(' '));

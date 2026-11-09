@@ -21,12 +21,14 @@ function icone(categorie, numero) {
 export default function Carte({ lieux, trace = false, hauteur = 420 }) {
   const { t, loc } = useLangue();
   const bounds = lieux.length > 1 ? L.latLngBounds(lieux.map((l) => l.coords)).pad(0.2) : undefined;
+  // react-leaflet ignore `bounds` dès que `center` et `zoom` sont fournis : ne les passer que sans bounds.
+  const vue = bounds
+    ? { bounds }
+    : { center: lieux.length === 1 ? lieux[0].coords : CENTRE_DAKAR, zoom: lieux.length === 1 ? 15 : 12 };
 
   return (
     <MapContainer
-      center={lieux.length === 1 ? lieux[0].coords : CENTRE_DAKAR}
-      zoom={lieux.length === 1 ? 15 : 12}
-      bounds={bounds}
+      {...vue}
       style={{ height: hauteur }}
       className="carte"
     >

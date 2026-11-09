@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import { lieuParId, categories } from '../data/lieux.js';
+import { lieuParId, categories, regions } from '../data/lieux.js';
 import { itineraires } from '../data/itineraires.js';
 import Photo from '../components/Photo.jsx';
 import Carte from '../components/Carte.jsx';
@@ -23,10 +23,13 @@ export default function Lieu() {
       <span className="badge" style={{ background: cat.couleur }}>{cat.label}</span>
       <h1>{lieu.nom}</h1>
       <BoutonPlanning id={lieu.id} />
-      <p className="quartier">{t('quartier')} : {lieu.quartier}</p>
+      <p className="quartier">
+        <Link to={`/lieux?region=${lieu.region}`}>{loc(regions[lieu.region]).label}</Link> · {t('quartier')} : {lieu.quartier}
+      </p>
       <p>{lieu.description}</p>
       <ul className="infos">
         <li><strong>{t('duree')} :</strong> {lieu.infos.duree}</li>
+        {lieu.infos.horaires && <li><strong>{t('horaires')} :</strong> {lieu.infos.horaires}</li>}
         <li><strong>{t('conseil')} :</strong> {lieu.infos.conseil}</li>
       </ul>
       <Carte lieux={[brut]} hauteur={300} />

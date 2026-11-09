@@ -198,5 +198,114 @@ export const creditsPhotos = {
     "licence": "CC BY 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Gor%C3%A9e_2024_-_coucher_de_soleil_sur_Dakar_-_25.jpg"
+  },
+  "toubab-dialaw.jpg": {
+    "auteur": "Kikanakana",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Des_batteurs_de_Djemb%C3%A9_sur_la_plage_de_Toubab_Dialaw.jpg"
+  },
+  "popenguine.jpg": {
+    "auteur": "Nickos",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:C%C3%B4te_de_la_R%C3%A9serve_de_Popenguine.jpg"
+  },
+  "saly.jpg": {
+    "auteur": "Jjm2311",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:SalyPortudalBeach.jpg"
+  },
+  "mbour.jpg": {
+    "auteur": "Gerardo Russo",
+    "licence": "CC BY 2.0 it",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0/it/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Arrivo_dei_pescatori_a_Mbour.jpg"
+  },
+  "fadiouth.jpg": {
+    "auteur": "Clean Heart Sn",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Eglise_Joal-Fadiouth.jpg"
+  },
+  "palmarin.jpg": {
+    "auteur": "Kalamuh 045",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Au_coeur_de_la_r%C3%A9serve_naturel_de_Palmarin_DSC00860.jpg"
+  },
+  "mar-lodj.jpg": {
+    "auteur": "Ourytima",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Les_trois_arbres_sacr%C3%A9s_entrelac%C3%A9s_de_Marlodji_01.jpg"
+  },
+  "toubacouta.jpg": {
+    "auteur": "Kateryna Serdiuk",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kayaking_in_Toubakouta_by_Sediuk.jpg"
+  },
+  "fathala.jpg": {
+    "auteur": "Kayusyussuf",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fathala_Wildlife_Reserve_Entrance.jpg"
+  },
+  "foundiougne.jpg": {
+    "auteur": "GastelEtzwane",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bac_de_Foundiougne_03.jpg"
+  },
+  "dionewar.jpg": {
+    "auteur": "arno B",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ile_du_saloum_DINOUAR_-_panoramio.jpg"
+  },
+  "ziguinchor.jpg": {
+    "auteur": "rignese",
+    "licence": "CC BY-SA 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Bateau_Aline_sito%C3%A9_diatta.JPG",
+    "illustration": true
+  },
+  "cap-skirring.jpg": {
+    "auteur": "Kateryna Serdiuk",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunset_in_Cap_Skirring_photo_1_by_Serdiuk.jpg"
+  },
+  "carabane.jpg": {
+    "auteur": "Kateryna Serdiuk",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Carabane_photo_1_by_Serdiuk.jpg"
+  },
+  "oussouye.jpg": {
+    "auteur": "Ji-Elle",
+    "licence": "Public domain",
+    "licenceUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Oussouye1.JPG"
+  },
+  "mlomp.jpg": {
+    "auteur": "Fatou kine doucoure",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Case_%C3%A0_%C3%A9tage.jpg"
+  },
+  "kafountine.jpg": {
+    "auteur": "Christian Pirkl",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kafountine_DSC07260_Senegal.jpg"
+  },
+  "abene.jpg": {
+    "auteur": "Pitele",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Plage_d%27Ab%C3%A9n%C3%A9.jpg"
   }
 };
